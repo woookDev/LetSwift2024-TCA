@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6C2A41432CE8A42A00665560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41422CE8A42A00665560 /* AppDelegate.swift */; };
+		6C2A41452CE8A42A00665560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41442CE8A42A00665560 /* SceneDelegate.swift */; };
+		6C2A41472CE8A42A00665560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41462CE8A42A00665560 /* ViewController.swift */; };
+		6C2A414A2CE8A42A00665560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A41482CE8A42A00665560 /* Main.storyboard */; };
+		6C2A414C2CE8A42B00665560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A414B2CE8A42B00665560 /* Assets.xcassets */; };
+		6C2A414F2CE8A42B00665560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A414D2CE8A42B00665560 /* LaunchScreen.storyboard */; };
+		6C2A415A2CE8A42B00665560 /* LetSwift2024LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41592CE8A42B00665560 /* LetSwift2024LightTests.swift */; };
+		6C2A41E82CE8B17D00665560 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 6C2A41E72CE8B17D00665560 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6C2A41562CE8A42B00665560 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -18,34 +29,16 @@
 
 /* Begin PBXFileReference section */
 		6C2A413F2CE8A42A00665560 /* LetSwift2024Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetSwift2024Light.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2A41422CE8A42A00665560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C2A41442CE8A42A00665560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6C2A41462CE8A42A00665560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C2A41492CE8A42A00665560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C2A414B2CE8A42B00665560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C2A414E2CE8A42B00665560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C2A41502CE8A42B00665560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C2A41552CE8A42B00665560 /* LetSwift2024LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwift2024LightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2A41592CE8A42B00665560 /* LetSwift2024LightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwift2024LightTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6C2A41672CE8A42B00665560 /* Exceptions for "LetSwift2024Light" folder in "LetSwift2024Light" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 6C2A413E2CE8A42A00665560 /* LetSwift2024Light */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6C2A41412CE8A42A00665560 /* LetSwift2024Light */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				6C2A41672CE8A42B00665560 /* Exceptions for "LetSwift2024Light" folder in "LetSwift2024Light" target */,
-			);
-			path = LetSwift2024Light;
-			sourceTree = "<group>";
-		};
-		6C2A41582CE8A42B00665560 /* LetSwift2024LightTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LetSwift2024LightTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6C2A413C2CE8A42A00665560 /* Frameworks */ = {
@@ -59,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2A41E82CE8B17D00665560 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +62,9 @@
 		6C2A41362CE8A42A00665560 = {
 			isa = PBXGroup;
 			children = (
-				6C2A41412CE8A42A00665560 /* LetSwift2024Light */,
-				6C2A41582CE8A42B00665560 /* LetSwift2024LightTests */,
+				6C2A41E42CE8B11300665560 /* LetSwift2024Light */,
+				6C2A41E52CE8B12E00665560 /* LetSwift2024LightTests */,
+				6C2A41E62CE8B17D00665560 /* Frameworks */,
 				6C2A41402CE8A42A00665560 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +76,51 @@
 				6C2A41552CE8A42B00665560 /* LetSwift2024LightTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6C2A41E42CE8B11300665560 /* LetSwift2024Light */ = {
+			isa = PBXGroup;
+			children = (
+				6C2A41EA2CE8B1F500665560 /* Features */,
+				6C2A41422CE8A42A00665560 /* AppDelegate.swift */,
+				6C2A414B2CE8A42B00665560 /* Assets.xcassets */,
+				6C2A41502CE8A42B00665560 /* Info.plist */,
+				6C2A414D2CE8A42B00665560 /* LaunchScreen.storyboard */,
+				6C2A41482CE8A42A00665560 /* Main.storyboard */,
+				6C2A41442CE8A42A00665560 /* SceneDelegate.swift */,
+				6C2A41462CE8A42A00665560 /* ViewController.swift */,
+			);
+			path = LetSwift2024Light;
+			sourceTree = "<group>";
+		};
+		6C2A41E52CE8B12E00665560 /* LetSwift2024LightTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C2A41592CE8A42B00665560 /* LetSwift2024LightTests.swift */,
+			);
+			path = LetSwift2024LightTests;
+			sourceTree = "<group>";
+		};
+		6C2A41E62CE8B17D00665560 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C2A41EA2CE8B1F500665560 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6C2A41EB2CE8B20100665560 /* Main */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6C2A41EB2CE8B20100665560 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,9 +137,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				6C2A41412CE8A42A00665560 /* LetSwift2024Light */,
 			);
 			name = LetSwift2024Light;
 			packageProductDependencies = (
@@ -121,11 +158,9 @@
 			dependencies = (
 				6C2A41572CE8A42B00665560 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				6C2A41582CE8A42B00665560 /* LetSwift2024LightTests */,
-			);
 			name = LetSwift2024LightTests;
 			packageProductDependencies = (
+				6C2A41E72CE8B17D00665560 /* ComposableArchitecture */,
 			);
 			productName = LetSwift2024LightTests;
 			productReference = 6C2A41552CE8A42B00665560 /* LetSwift2024LightTests.xctest */;
@@ -159,6 +194,11 @@
 			);
 			mainGroup = 6C2A41362CE8A42A00665560;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6C2A41732CE8A75000665560 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				6C2A41E22CE8B0DB00665560 /* XCRemoteSwiftPackageReference "Then" */,
+				6C2A41E32CE8B0F100665560 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6C2A41402CE8A42A00665560 /* Products */;
 			projectDirPath = "";
@@ -175,6 +215,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2A414F2CE8A42B00665560 /* LaunchScreen.storyboard in Resources */,
+				6C2A414C2CE8A42B00665560 /* Assets.xcassets in Resources */,
+				6C2A414A2CE8A42A00665560 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2A41472CE8A42A00665560 /* ViewController.swift in Sources */,
+				6C2A41432CE8A42A00665560 /* AppDelegate.swift in Sources */,
+				6C2A41452CE8A42A00665560 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2A415A2CE8A42B00665560 /* LetSwift2024LightTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +258,25 @@
 			targetProxy = 6C2A41562CE8A42B00665560 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C2A41482CE8A42A00665560 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C2A41492CE8A42A00665560 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C2A414D2CE8A42B00665560 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C2A414E2CE8A42B00665560 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6C2A41692CE8A42B00665560 /* Debug */ = {
@@ -457,6 +523,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C2A41732CE8A75000665560 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.16.1;
+			};
+		};
+		6C2A41E22CE8B0DB00665560 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		6C2A41E32CE8B0F100665560 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C2A41E72CE8B17D00665560 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C2A41732CE8A75000665560 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C2A41372CE8A42A00665560 /* Project object */;
 }
