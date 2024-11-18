@@ -11,10 +11,6 @@ import ComposableArchitecture
 
 @Reducer
 struct SessionHeaderReducer {
-    // MARK: - Initializer
-
-    init() {}
-
     // MARK: - State
 
     @ObservableState

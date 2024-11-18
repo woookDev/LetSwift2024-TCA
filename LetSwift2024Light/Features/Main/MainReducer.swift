@@ -5,7 +5,6 @@
 //  Created by Jaewook Hwang on 11/16/24.
 //
 
-import Foundation
 import ComposableArchitecture
 
 // MARK: - MainError
@@ -21,10 +20,6 @@ struct MainReducer {
     // MARK: - Dependencies
 
     @Dependency(\.mainClient) var mainClient: MainClient
-    
-    // MARK: - Initializer
-
-    init() {}
 
     // MARK: - State
 

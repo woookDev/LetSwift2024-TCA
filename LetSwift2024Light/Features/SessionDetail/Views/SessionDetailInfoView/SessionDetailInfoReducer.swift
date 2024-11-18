@@ -11,10 +11,6 @@ import ComposableArchitecture
 
 @Reducer
 struct SessionDetailInfoReducer {
-    // MARK: - Initializer
-
-    init() {}
-
     // MARK: - State
 
     @ObservableState
