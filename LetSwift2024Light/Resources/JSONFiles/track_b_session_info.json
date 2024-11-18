@@ -1,0 +1,75 @@
+{
+    "session_info_list": [
+        {
+            "id": 8,
+            "title": "현실적인 SwiftUI 적응기",
+            "speaker": {
+                "name": "손원영 & 김용덕",
+                "description": "네이버지도 SDK를 만들던 개발자가 이제는 충성 고객이 되었습니다.",
+                "nick_name": "Double.d"
+            },
+            "time": "11:00 ~ 11:40"
+        },
+        {
+            "id": 9,
+            "title": "자고 일어났더니, 앱스토어 3위? 나만의 네컷",
+            "speaker": {
+                "name": "서희찬",
+                "description": "developing for our lives 좌우명을 가지고 인류에 기여하는 삶을 살고자 개발하고 있습니다",
+                "nick_name": "Seochan"
+            },
+            "time": "11:50 ~ 12:30"
+        },
+        {
+            "id": 10,
+            "title": "적용해보면 해볼수록 빠져드는 성장형 아키텍쳐 TCA",
+            "speaker": {
+                "name": "황재욱",
+                "description": "만들고 싶은게 많아서 개발자가 된 대장장이형 Developer",
+                "nick_name": null
+            },
+            "time": "14:00 ~ 14:40"
+        },
+        {
+            "id": 11,
+            "title": "차근차근 Swift 6 마이그레이션",
+            "speaker": {
+                "name": "황예은",
+                "description": "Bridging People and Technology ✨",
+                "nick_name": "Yeni"
+            },
+            "time": "14:50 ~ 15:10"
+        },
+        {
+            "id": 12,
+            "title": "늦었다고 생각할 때 진짜 늦었으니 UITest로 시나리오 테스트하기",
+            "speaker": {
+                "name": "이재웅",
+                "description": "안녕하세요, 문제 해결이라는 성취를 쫒아 개발자가 된 커리(이재웅) 입니다.",
+                "nick_name": "커리"
+            },
+            "time": "15:20 ~ 15:40"
+        },
+        {
+            "id": 13,
+            "title": "Plugin 패턴을 이용하여 동적 데이터를 구조화하기",
+            "speaker": {
+                "name": "안정민",
+                "description": "개발자 탈을 쓴 은행원입니다.",
+                "nick_name": "민소네"
+            },
+            "time": "15:50 ~ 16:30"
+        },
+        {
+            "id": 14,
+            "title": "Apple Intelligence로 혁신하는 AI 경험: 성장형 AI의 미래",
+            "speaker": {
+                "name": "꼼꼼한 재은씨",
+                "description": "기술의 진입장벽을 낮추어 누구나 쉽게 개발자가 될 수 있는 세상을 희망합니다. 더 많이 알리고, 더 쉽게 설명하기 위해 노력합니다.",
+                "nick_name": "꼼꼼한 재은씨"
+            },
+            "time": "16:40 ~ 17:20"
+        }
+    ]
+}
+
