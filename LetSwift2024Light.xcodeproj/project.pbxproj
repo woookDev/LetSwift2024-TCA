@@ -11,7 +11,6 @@
 		6C2A41452CE8A42A00665560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41442CE8A42A00665560 /* SceneDelegate.swift */; };
 		6C2A414C2CE8A42B00665560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A414B2CE8A42B00665560 /* Assets.xcassets */; };
 		6C2A414F2CE8A42B00665560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A414D2CE8A42B00665560 /* LaunchScreen.storyboard */; };
-		6C2A415A2CE8A42B00665560 /* LetSwift2024LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41592CE8A42B00665560 /* LetSwift2024LightTests.swift */; };
 		6C2A41ED2CE8B28400665560 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41EC2CE8B28400665560 /* MainReducer.swift */; };
 		6C2A41EF2CE8C08E00665560 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41EE2CE8C08E00665560 /* MainViewController.swift */; };
 		6C2A41F32CE8C11100665560 /* SessionHeaderReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A41F22CE8C11100665560 /* SessionHeaderReducer.swift */; };
@@ -43,6 +42,8 @@
 		6C8584692CEB8B0000A0EA83 /* track_a_session_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C8584672CEB8B0000A0EA83 /* track_a_session_info.json */; };
 		6C85846A2CEB8B0000A0EA83 /* track_b_session_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C8584682CEB8B0000A0EA83 /* track_b_session_info.json */; };
 		6C8584722CECD9AE00A0EA83 /* MainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8584712CECD9AE00A0EA83 /* MainClient.swift */; };
+		6CE2CC1B2CECECDE00AA8C92 /* MainReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CC1A2CECECDE00AA8C92 /* MainReducerTests.swift */; };
+		6CE2CC202CEE0B9200AA8C92 /* SessionDetailInfoReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE2CC1F2CEE0B9200AA8C92 /* SessionDetailInfoReducerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +78,6 @@
 		6C2A414E2CE8A42B00665560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C2A41502CE8A42B00665560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C2A41552CE8A42B00665560 /* LetSwift2024LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetSwift2024LightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C2A41592CE8A42B00665560 /* LetSwift2024LightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetSwift2024LightTests.swift; sourceTree = "<group>"; };
 		6C2A41EC2CE8B28400665560 /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
 		6C2A41EE2CE8C08E00665560 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6C2A41F22CE8C11100665560 /* SessionHeaderReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHeaderReducer.swift; sourceTree = "<group>"; };
@@ -105,6 +105,8 @@
 		6C8584672CEB8B0000A0EA83 /* track_a_session_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = track_a_session_info.json; sourceTree = "<group>"; };
 		6C8584682CEB8B0000A0EA83 /* track_b_session_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = track_b_session_info.json; sourceTree = "<group>"; };
 		6C8584712CECD9AE00A0EA83 /* MainClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClient.swift; sourceTree = "<group>"; };
+		6CE2CC1A2CECECDE00AA8C92 /* MainReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducerTests.swift; sourceTree = "<group>"; };
+		6CE2CC1F2CEE0B9200AA8C92 /* SessionDetailInfoReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailInfoReducerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +165,8 @@
 		6C2A41E52CE8B12E00665560 /* LetSwift2024LightTests */ = {
 			isa = PBXGroup;
 			children = (
-				6C2A41592CE8A42B00665560 /* LetSwift2024LightTests.swift */,
+				6CE2CC1E2CEE0B8300AA8C92 /* SessionDetail */,
+				6CE2CC192CECECD200AA8C92 /* Main */,
 			);
 			path = LetSwift2024LightTests;
 			sourceTree = "<group>";
@@ -385,6 +388,22 @@
 			path = JSONFiles;
 			sourceTree = "<group>";
 		};
+		6CE2CC192CECECD200AA8C92 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6CE2CC1A2CECECDE00AA8C92 /* MainReducerTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6CE2CC1E2CEE0B8300AA8C92 /* SessionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6CE2CC1F2CEE0B9200AA8C92 /* SessionDetailInfoReducerTests.swift */,
+			);
+			path = SessionDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -535,7 +554,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2A415A2CE8A42B00665560 /* LetSwift2024LightTests.swift in Sources */,
+				6CE2CC1B2CECECDE00AA8C92 /* MainReducerTests.swift in Sources */,
+				6CE2CC202CEE0B9200AA8C92 /* SessionDetailInfoReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
