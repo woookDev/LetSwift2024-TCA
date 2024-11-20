@@ -29,3 +29,25 @@ extension DependencyValues {
         set { self[MainClient.self] = newValue }
     }
 }
+
+// MARK: - TestDependencyKey
+
+extension MainClient: TestDependencyKey {
+    public static var testValue = Self(
+        fetchTrackInfo: { _ in
+                .init(sessionInfoList: [
+                    .init(
+                        id: 1,
+                        title: "앱의 경계를 넘다: Interactive Widget",
+                        speakerInfo: .init(
+                            name: "유재호",
+                            description: "사용자들에게 더 큰 가치를 제공하는 앱을 만들기 위해 노력하는 iOS 개발자입니다.",
+                            nickname: nil
+                        ),
+                        time: "11:00 ~ 11:40"
+                    )
+                ]
+            )
+        }
+    )
+}
