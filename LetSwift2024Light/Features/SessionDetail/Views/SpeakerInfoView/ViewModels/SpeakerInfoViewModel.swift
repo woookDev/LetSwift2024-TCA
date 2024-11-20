@@ -9,7 +9,6 @@ import Foundation
 
 struct SpeakerInfoViewModel: Equatable {
     let id: Int
-    let profileImageName: String
     let speakerName: String
     let speakerDescription: String
 }

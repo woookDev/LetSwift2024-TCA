@@ -41,7 +41,9 @@ struct MainReducer {
     // MARK: - Action
 
     enum Action {
-        public enum Alert: Equatable, Sendable {}
+        public enum Alert: Equatable, Sendable {
+            case present
+        }
         
         case alert(PresentationAction<Alert>)
         case receiveData(
@@ -89,7 +91,7 @@ struct MainReducer {
                         time: cellData.info.time
                     ),
                     speakerInfoViewModel: .init(
-                        id: cellData.id, profileImageName: "",
+                        id: cellData.id,
                         speakerName: cellData.info.speakerInfo.name ?? "",
                         speakerDescription: cellData.info.speakerInfo.description ?? ""
                     )

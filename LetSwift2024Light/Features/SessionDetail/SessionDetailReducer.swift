@@ -21,9 +21,7 @@ struct SessionDetailReducer {
 
     // MARK: - Action
 
-    enum Action {
-        case didTapCompleteButton
-    }
+    enum Action { }
 
     // MARK: - Reducer
 
