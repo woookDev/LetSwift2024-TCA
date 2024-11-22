@@ -11,6 +11,10 @@ import ComposableArchitecture
 
 enum MainError: Error {
     case loadJSONError
+    
+    var localizedDescription: String {
+        return "트랙별 세션 데이터 로드에 실패하였습니다"
+    }
 }
 
 // MARK: - MainReducer
@@ -41,9 +45,7 @@ struct MainReducer {
     // MARK: - Action
 
     enum Action {
-        public enum Alert: Equatable, Sendable {
-            case present
-        }
+        public enum Alert: Equatable, Sendable {}
         
         case alert(PresentationAction<Alert>)
         case receiveData(
@@ -101,11 +103,17 @@ struct MainReducer {
                 state.selectedTrackType = type
                 state.sessionHeader = .init(selectedType: type)
                 return .run { [state] send in
-                    if let trackInfo = try await self.mainClient.fetchTrackInfo(type.rawValue) {
-                        await send(
-                            .receiveData(.success(makeCellItems(trackInfo: trackInfo, completedSessions: state.completedSessions)))
-                        )
-                    } else {
+                    do {
+                        if let trackInfo = try await self.mainClient.fetchTrackInfo(type.rawValue) {
+                            await send(
+                                .receiveData(.success(makeCellItems(trackInfo: trackInfo, completedSessions: state.completedSessions)))
+                            )
+                        } else {
+                            await send(
+                                .receiveData(.failure(MainError.loadJSONError))
+                            )
+                        }
+                    } catch {
                         await send(
                             .receiveData(.failure(MainError.loadJSONError))
                         )
@@ -143,19 +151,11 @@ extension MainReducer {
     
     private func checkCompletedSessions(cellItems: [SessionInfoCellReducer.State], completedSessions: Set<Int>) -> IdentifiedArrayOf<SessionInfoCellReducer.State> {
         let checkedItems = cellItems.map { state in
-            if completedSessions.contains(state.id) {
-                return SessionInfoCellReducer.State(
-                    id: state.id,
-                    info: state.info,
-                    isComplete: true
-                )
-            } else {
-                return SessionInfoCellReducer.State(
-                    id: state.id,
-                    info: state.info,
-                    isComplete: false
-                )
-            }
+            return SessionInfoCellReducer.State(
+                id: state.id,
+                info: state.info,
+                isComplete: completedSessions.contains(state.id)
+            )
         }
         
         return IdentifiedArrayOf(uniqueElements: checkedItems)
