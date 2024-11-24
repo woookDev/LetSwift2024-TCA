@@ -10,7 +10,7 @@ import ComposableArchitecture
 @testable import LetSwift2024Light
 
 final class SessionDetailInfoReducerTests: XCTestCase {
-    func test_MainReducer_didTapCompleteButton() async throws {
+    func test_SessionDetailInfoReducer_didTapCompleteButton() async throws {
         let testStore = await TestStore(initialState: SessionDetailInfoReducer.State(
             viewModel: .init(
                 id: 1,
